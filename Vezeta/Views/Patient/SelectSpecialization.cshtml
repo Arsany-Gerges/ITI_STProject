@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Select Specialization";
+}
+
+<h1>Select Specialization</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="specialization">Specialization</label>
+        <select id="specialization" name="specialization" class="form-control" required>
+            <option value="">Select a specialization</option>
+            @foreach (var specialization in (IEnumerable<string>)ViewData["Specializations"])
+            {
+                <option value="@specialization">@specialization</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Next</button>
+</form>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <h1 style="margin-bottom: 50px;">Welcome to  Vezeta App</h1>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
+            <a href="/Home/Login?role=Doctor" class="btn btn-primary" style="margin-bottom: 15px;">Login as Doctor</a>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <a href="/Home/Login?role=Patient" class="btn btn-primary" style="margin-bottom: 15px;">Login as Patient</a>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <a href="/Home/Register" class="btn btn-secondary" style="margin-bottom: 15px;">Create New Account</a>
+        </div>
+    </div>
+</div>

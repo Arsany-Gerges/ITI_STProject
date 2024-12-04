@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+
+<form method="post" action="/home/register">
+    <div class="form-group">
+        <label for="role">Role</label>
+        <select id="role" name="role" class="form-control" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Patient">Patient</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" required />
+    </div>
+
+    <div class="form-group" id="ageField" style="display:none;">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" class="form-control" />
+    </div>
+
+    <div class="form-group" id="specializationField" style="display:none;">
+        <label for="specialization">Specialization</label>
+        <input type="text" id="specialization" name="specialization" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger mt-3">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<script>
+    document.getElementById('role').addEventListener('change', function () {
+        var role = this.value;
+        document.getElementById('specializationField').style.display = role === 'Doctor' ? 'block' : 'none';
+        document.getElementById('ageField').style.display = role === 'Patient' ? 'block' : 'none';
+    });
+</script>

@@ -1,0 +1,70 @@
+﻿@model PendingRequestViewModel
+@{
+    ViewData["Title"] = "Request Details";
+}
+
+<h1>Request Details</h1>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4>Appointment Request Details</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <strong>Doctor Name:</strong>
+                </div>
+                <div class="col-md-8">
+                    Dr/ @Model.DoctorName
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <strong>Specialization:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Specialization
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <strong>Request Date:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.RequestDate.ToShortDateString()
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <strong>Status:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Status
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <strong>Symptoms:</strong>
+                </div>
+                <div class="col-md-8">
+                    @Model.Symptoms
+                </div>
+            </div>
+            @if (Model.AppointmentDate.HasValue)
+            {
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <strong>Appointment Date:</strong>
+                    </div>
+                    <div class="col-md-8">
+                        @Model.AppointmentDate.Value.ToShortDateString()
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="card-footer">
+            <a href="@Url.Action("Index", "Patient",new { id = ViewBag.PatientId })" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Select Doctor";
+    var doctors = (List<Doctor>)ViewData["Doctors"];
+    var specialization = ViewData["SelectedSpecialization"] as string;
+}
+
+<h1>Select Doctor for @specialization</h1>
+
+<form method="post" asp-action="RequestAppointment">
+    <div class="form-group">
+        <label for="doctor">Doctor</label>
+        <select id="doctor" name="doctorId" class="form-control" required>
+            <option value="">Select a doctor</option>
+            @foreach (var doctor in doctors)
+            {
+                <option value="@doctor.DoctorId">Dr/ @doctor.Name - @doctor.Specialization</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="patientMessage">Symptoms</label>
+        <textarea id="symptoms" name="symptoms" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Book Appointment</button>
+</form>

@@ -1,0 +1,53 @@
+﻿@model DoctorDashboardViewModel
+
+
+<h1>Welcome, Dr. @Model.Name</h1>
+
+<h2>Appointment Requests</h2>
+
+@if (Model.PendingRequests.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Request Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model.PendingRequests)
+            {
+                <tr>
+                    <td>@request.PatientName</td>
+                    <td>@request.RequestDate.ToShortDateString()</td>
+                    <td class="@GetStatusClass(request.Status)">
+                        @request.Status
+                    </td>
+                    <td>
+                        <a href="@Url.Action("RequestDetails", new { id = request.AppointmentRequestId })" class="btn btn-info">View Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No appointment requests.</p>
+}
+
+
+@functions {
+    private string GetStatusClass(string status)
+    {
+        return status switch
+        {
+            "Rejected" => "status-rejected",
+            "Pending" => "status-pending",
+            "Accepted" => "status-accepted",
+            _ => ""
+        };
+    }
+}

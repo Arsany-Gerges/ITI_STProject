@@ -1,0 +1,68 @@
+﻿@model PatientDashboardViewModel
+
+<h1>Welcome, @Model.Name</h1>
+
+<h2>Pending Appointment Requests</h2>
+
+@if (Model.PendingRequests.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Request Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model.PendingRequests)
+            {
+                <tr>
+                    <td>@request.DoctorName</td>
+                    <td>@request.Specialization</td>
+                    <td>@request.RequestDate.ToShortDateString()</td>
+                    <td class="@GetStatusClass(request.Status)">
+                        @request.Status
+                    </td>
+                    <td>
+                        <a href="@Url.Action("Details", "Patient", new { id = request.AppointmentRequestId })" class="btn btn-info">View Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No pending requests.</p>
+}
+
+<h2>book new vezeta</h2>
+<form action="@Url.Action("SelectSpecialization", "Patient")" method="post">
+    <div class="form-group">
+        <label for="specialization">Specialization</label>
+        <select id="specialization" name="specialization" class="form-control" required>
+            <option value="">Select a specialization</option>
+            @foreach (var specialization in Model.Specializations)
+            {
+                <option value="@specialization">@specialization</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Select Specialization</button>
+</form>
+
+@functions {
+    private string GetStatusClass(string status)
+    {
+        return status switch
+        {
+            "Rejected" => "status-rejected",
+            "Pending" => "status-pending",
+            "Accepted" => "status-accepted",
+            _ => ""
+        };
+    }
+}

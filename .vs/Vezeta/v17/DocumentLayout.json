@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\vezeta\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|solutionrelative:vezeta\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|c:\\users\\arsany gerges\\desktop\\iti dot net\\vezeta\\vezeta\\views\\doctor\\requestdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|solutionrelative:vezeta\\views\\doctor\\requestdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\vezeta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|solutionrelative:vezeta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\vezeta\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{722B01C3-53BA-41D4-A9FF-9C80A05223D4}|Vezeta\\Vezeta.csproj|solutionrelative:vezeta\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 267,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Vezeta\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Vezeta\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T07:59:22.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Vezeta\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Vezeta\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-16T07:52:23.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Vezeta\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Vezeta\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwDkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T07:44:21.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Views\\Doctor\\RequestDetails.cshtml",
+              "RelativeDocumentMoniker": "Vezeta\\Views\\Doctor\\RequestDetails.cshtml",
+              "ToolTip": "C:\\Users\\Arsany Gerges\\Desktop\\ITI Dot net\\Vezeta\\Vezeta\\Views\\Doctor\\RequestDetails.cshtml",
+              "RelativeToolTip": "Vezeta\\Views\\Doctor\\RequestDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T07:45:42.451Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
